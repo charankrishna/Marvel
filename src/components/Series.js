@@ -5,7 +5,7 @@ const Series=()=>{
 const [data,setData]=useState(null);
 
 useEffect(()=>{
-    fetch('http://gateway.marvel.com/v1/public/series?apikey=0f66d3d7a3a32ccb04607e6f0c2c10a8')
+    fetch('https://gateway.marvel.com/v1/public/series?apikey=0f66d3d7a3a32ccb04607e6f0c2c10a8')
     .then(res=>res.json())
     .then(jres=>{
         setData(jres.data.results);
